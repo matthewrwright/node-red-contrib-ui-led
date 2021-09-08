@@ -57,12 +57,12 @@ export const ledElement = (
   // TODO: if show glow is turned off we should not include this padding for the glow?
   const ledContentsStyle = String.raw`
     div.${controlClass}.led_contents {
-      min-height: ${length}px;
-      min-width: ${length}px;
-      height: ${length}px;
-      width: ${length}px;
-      max-height: ${length}px;
-      max-width: ${length}px;
+      min-height: 100%;
+      min-width: 100%;
+      height: 100%;
+      width: 100%;
+      max-height: 100%;
+      max-width: 100%;
       text-align: center;
       margin: ${ledContainerPadding}px;
       ${shape === 'circle' ? `border-radius: 50%;` : ''}
